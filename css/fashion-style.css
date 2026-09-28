@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: #f5f5f5;
+}
+
+
+/* NAVIGATION */
+
+.fashion-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.fashion-logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.fashion-links {
+    display: flex;
+    gap: 28px;
+}
+
+.fashion-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.fashion-links a:hover {
+    color: #999;
+}
+
+
+/* HERO */
+
+.fashion-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 150px 7%;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("https://images.unsplash.com/photo-1445205170230-053b83016050");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.fashion-hero-content p {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.fashion-hero h1 {
+    font-size: 90px;
+    line-height: 0.9;
+    letter-spacing: -3px;
+    margin-bottom: 40px;
+}
+
+.fashion-button {
+    display: inline-block;
+    padding: 16px 30px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.fashion-button:hover {
+    background: #cccccc;
+    transform: translateY(-4px);
+}
+
+
+/* COLLECTION */
+
+.collection {
+    padding: 120px 7%;
+    text-align: center;
+}
+
+.fashion-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.collection h2 {
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 300px;
+    text-align: left;
+}
+
+.product-image {
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.product-one {
+    background: #222;
+}
+
+.product-two {
+    background: #333;
+}
+
+.product-three {
+    background: #181818;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #999;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.product-card strong {
+    font-size: 18px;
+}
+
+
+/* ABOUT */
+
+.fashion-about {
+    padding: 120px 7%;
+    background: #f5f5f5;
+    color: #0a0a0a;
+    text-align: center;
+}
+
+.fashion-about h2 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.fashion-about p:last-child {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* CONTACT */
+
+.fashion-contact {
+    padding: 120px 7%;
+    text-align: center;
+}
+
+.fashion-contact h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.fashion-contact p {
+    color: #999;
+    margin-bottom: 35px;
+}
+
+
+/* FOOTER */
+
+.fashion-footer {
+    padding: 45px;
+    background: #050505;
+    text-align: center;
+}
+
+.fashion-footer p {
+    color: #777;
+    margin-top: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .fashion-links {
+        gap: 10px;
+    }
+
+    .fashion-links a {
+        font-size: 11px;
+    }
+
+    .fashion-hero h1 {
+        font-size: 60px;
+    }
+
+    .collection h2,
+    .fashion-about h2,
+    .fashion-contact h2 {
+        font-size: 36px;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+}
